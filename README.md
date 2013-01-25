@@ -20,6 +20,10 @@ Here we don't want to go into a detailed discussion. For detail, please consult 
 
 However, it is widely believed that the spectral test is one of the strongest test to select a good generator. MT is designed to pass a similar test, called the k-distribution test. For example, if we look the output with 32-bit accuracy, then the 623-tuples from the output in a whole period are equidistributed in the 623-dimensional unit cube. For 16-bit accuracy, 1246-tuples are equidistributed in 1246-dimension, and for 2-bit accuaracy, in 9968-dimension. These values are at least 15 times larger than the previous records. MT passed many stringent tests, including the diehard test by G.Marsaglia and the load test by P.Hellekalek and S.Wegenkittl. 
 
+License:
+http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/elicense.html
+Until 2001/4/6, MT had been distributed under GNU Public License, but after 2001/4/6, we decided to let MT be used for any purpose, including commercial use. 2002-versions mt19937ar.c, mt19937ar-cok.c are considered to be usable freely.
+
 MT is an improved version of a very successful generator TT800, which has the period 2^800-1 and has been used for a few years with favorable comments by many users. MT is much more robust. 
 
 The generator is implemented to generate the output only by fastest arithmetic operations: no division, no multiplication. By generating an array at one time, it takes the full advantage of cache memory and pipeline processing. 
